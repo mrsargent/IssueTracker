@@ -9,6 +9,8 @@ interface Props {
     params: {id: string}  //the reaons why it's a string is because by default when you enter a number in a url (route) it is a string not a number. We'll need to parse to get a nubmer
 }
 
+//for understanding purpoes... becaues this is a page.tsx file inside of a folder [id] it automatically takes a string as a parameter
+//in our case this is a nubmer that represents the issue number.
 const IssueDetailPage = async ({params}: Props) => {
     // if (typeof params.id !== 'number') notFound();  doesn't seem to work very well for some reason
 
